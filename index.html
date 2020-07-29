@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.formstyle{
+			width: 130px;
+			height: 258px;
+			margin: auto;
+			border: 2px solid black;
+		}
+		#clear{
+			width: 130px;
+		}
+		.output{
+			width: 123px;
+		}
+		.inp{
+			width: 40px;
+		}
+		input{
+			background-color: green;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="formstyle">
+		<form name="forms">
+			<input type="text"  name="answer"class="output"><br><br>
+			<input type="button" class="inp" value=" 1 " onclick="forms.answer.value += '1'  " >
+			<input type="button" class="inp" value=" 2 " onclick="forms.answer.value += '2'  " >
+			<input type="button" class="inp" value=" 3 " onclick="forms.answer.value += '3'  " >
+			<br><br>
+
+			<input type="button" class="inp" value=" 4 " onclick="forms.answer.value += '4'  " >
+			<input type="button" class="inp" value=" 5 " onclick="forms.answer.value += '5'  " >
+			<input type="button" class="inp" value=" 6 " onclick="forms.answer.value += '6'  " >
+			<br><br>
+
+			<input type="button" class="inp" value=" 7 " onclick="forms.answer.value += '7'  " >
+			<input type="button" class="inp" value=" 8 " onclick="forms.answer.value += '8'  " >
+			<input type="button" class="inp" value=" 9 " onclick="forms.answer.value += '9'  " >
+			<br><br>
+
+			<input type="button" class="inp" value=" + " onclick="forms.answer.value += '+'  " >
+			<input type="button" class="inp" value=" - " onclick="forms.answer.value += '-'  " >
+			<input type="button" class="inp" value=" * " onclick="forms.answer.value += '*'  " >
+			<br><br>
+
+			<input type="button" class="inp" value=" / " onclick="forms.answer.value += '/'  " >
+			<input type="button" class="inp" value=" 0 " onclick="forms.answer.value += '0'  " >
+			<input type="button" class="inp" value=" = " onclick="forms.answer.value = eval(forms.answer.value)  " >
+			<br><br>
+			<input type="button" class="output" value="Clear All"  onclick="forms.answer.value = '' " id = "clear">
+			
+			
+
+			
+
+		</form>
+		
+
+
+	</div>
+
+</body>
+</html>
